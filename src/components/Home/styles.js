@@ -8,6 +8,10 @@ export const HomeContainer = styled.div`
   justify-content: center;
   gap: 1.375rem;
   margin: 1.375rem 4.375rem 0 4.375rem;
+
+  @media (max-width: 768px) {
+    margin: 1.375rem 0 0 0;
+  }
 `;
 
 export const HomeContent = styled.div`
@@ -39,7 +43,7 @@ export const RightSection = styled.div`
 `;
 
 export const Headline = styled.h1`
-  font-size: 2.625rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: ${({ theme }) => theme.title};
 
@@ -53,7 +57,7 @@ export const SpanBlue = styled.span`
 `;
 
 export const Subheadline = styled.h2`
-  font-size: 1.313rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: ${({ theme }) => theme.title};
 
@@ -68,4 +72,9 @@ export const LeftSection = styled.div`
   background-position: center;
   height: 30rem;
   width: 32rem;
+
+  @media (max-width: 768px) {
+    width: 22.5rem;
+    height: 22.5rem;
+  }
 `;

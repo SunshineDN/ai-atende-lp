@@ -8,10 +8,14 @@ export const Container = styled.div`
   margin: 5rem auto 0 auto;
   width: 65%;
   gap: 3.25rem;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 `;
 
 export const Title = styled.h1`
-  font-size: 2.625rem;
+  font-size: 2.5rem;
   color: ${({ theme }) => theme.title};
   text-align: center;
   font-weight: 700;
@@ -29,7 +33,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const Text = styled.p`
-  font-size: 1.313rem;
+  font-size: 1.2rem;
   color: ${({ theme }) => theme.title};
   text-align: left;
   font-weight: 400;

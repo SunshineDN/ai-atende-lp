@@ -3,7 +3,7 @@ import Button from '../Button/Button';
 
 const Benefits = () => {
   return (
-    <S.Container>
+    <S.Container id='benefits'>
       <S.Title>Benefícios</S.Title>
       <S.Subtitle>Conheça os benefícios de ser um membro da nossa plataforma</S.Subtitle>
       <S.CardWrapper>

@@ -11,15 +11,15 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 2.625rem;
+  font-size: 2.4rem;
   font-weight: 700;
   color: ${({ theme }) => theme.title};
   text-align: center;
 `;
 
 export const Text = styled.p`
-  font-size: 1.313rem;
-  font-weight: 400;
+  font-size: 1.2rem;
+  font-weight: 200;
   color: ${({ theme }) => theme.title};
 
   &:nth-child(2){
@@ -54,6 +54,7 @@ export const Card = styled.div`
   @media (max-width: 630px) {
     width: 100%;
     height: 100%;
+    padding: 1rem;
   }
 `;
 
@@ -68,6 +69,11 @@ export const BottomContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+
+  @media (max-width: 422px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
 `;
 
 export const ProfileWrapper = styled.div`

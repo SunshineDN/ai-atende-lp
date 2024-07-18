@@ -11,7 +11,11 @@ const pushRight = keyframes`
   }
 `;
 
-export const ButtonContainer = styled.button`
+export const ButtonContainer = styled.a.attrs({
+  target: '_blank'
+})`
+  text-align: center;
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;

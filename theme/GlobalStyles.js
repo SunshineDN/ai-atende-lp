@@ -7,6 +7,12 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html {
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
   body {
     font-family: "Outfit";
     font-weight: 400;

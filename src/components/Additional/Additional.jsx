@@ -15,7 +15,7 @@ const Additional = () => {
           <S.Li>Poucos agendamentos com pouco faturamento.</S.Li>
           <S.Li>Clientes insatisfeitos devido as respostas tardias.</S.Li>
         </S.Ul>
-        <Button $_inverse />
+        <Button $_inverse href='#' />
       </S.RightSection>
     </S.Container>
   );

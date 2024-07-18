@@ -9,6 +9,12 @@ export const Container = styled.div`
   gap: 3rem;
   margin: 5rem auto;
   width: 80%;
+
+  @media (max-width: 977px) {
+    flex-direction: column;
+    width: 90%;
+    gap: 3rem;
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -16,14 +22,14 @@ export const TextWrapper = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 2.625rem;
+  font-size: 2.4rem;
   font-weight: 700;
   color: ${({ theme }) => theme.title};
 `;
 
 export const Text = styled.p`
-  font-size: 1.313rem;
-  font-weight: 400;
+  font-size: 1.2rem;
+  font-weight: 200;
   color: ${({ theme }) => theme.title};
 `;
 
@@ -34,6 +40,10 @@ export const DetailsContainer = styled.section`
   justify-content: center;
   align-items: flex-start;
   gap: 1.5rem;
+
+  @media (max-width: 977px) {
+    width: 100%;
+  }
 `;
 
 export const Arrow = styled(ChevronDown)`
@@ -52,9 +62,9 @@ export const Line = styled.div`
 
 export const Span = styled.span`
   display: block;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: ${({ theme }) => theme.title};
-  font-weight: 500;
+  font-weight: 200;
   width: 90%;
   opacity: .7;
 `;

@@ -10,6 +10,10 @@ export const Container = styled.div`
   margin: 5rem auto;
   width: 65%;
   gap: 3.25rem;
+
+  @media (max-width: 460px) {
+    width: 90%;
+  }
 `;
 
 export const Title = styled.h1`
@@ -20,7 +24,7 @@ export const Title = styled.h1`
 `;
 
 export const Subtitle = styled.h2`
-  font-size: 1.313rem;
+  font-size: 1.2rem;
   color: ${({ theme }) => theme.title};
   text-align: center;
   font-weight: 400;
@@ -41,6 +45,10 @@ export const CardWrapper = styled.div`
   & button {
     color: ${({ theme }) => theme.background};
     font-weight: 600;
+  }
+
+  @media (max-width: 460px) {
+    width: 100%;
   }
 `;
 
